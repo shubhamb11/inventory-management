@@ -1,5 +1,39 @@
 .manage-type-wrapper {
     .manage-type-form-wrapper {
-        flex: 1;
+        // flex: 1;
+        .card-header {
+            text-transform: capitalize;
+        }
+
+        .lg-dropdown-btn {
+            width: 100%;
+            padding: 4px;
+            background-color: white;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .drop-down-item-wrapper {
+            display: inline-flex;
+            button {
+                background: white;
+                color: black;
+            }
+        }
+
+        .field-inputs {
+            width: 100%;
+            margin-bottom: 10px;
+            a {
+                padding: 6px 0;
+                button {
+                    text-transform: capitalize;
+                    background-color: white;
+                    color: black;
+                    border: 0;
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
     }
 }

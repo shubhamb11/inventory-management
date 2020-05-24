@@ -1,10 +1,10 @@
 import React from "react";
-import ManageTypeView from "./ManageTypeView";
+import Products from "./Products";
 
 function Home() {
     return (
         <React.Fragment>
-            <ManageTypeView />
+            <Products />
         </React.Fragment>
     );
 }

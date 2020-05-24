@@ -7,27 +7,27 @@ import { addCategoryForm } from "../store/actions/actions";
 
 const ManageTypeView = (props) => {
     const addCategoryForm = () => {
-        console.log("add a form");
+        // console.log("add a form");
         props.addCategoryForm();
     };
 
     let manageTypeForm = props.manage_type.map((category) => {
         return (
-            <Col key={category} xs={12} lg={2} md={3}>
-                <ManageTypeForm />
+            <Col key={category.id} xs={12} lg={3} md={3}>
+                <ManageTypeForm id={category.id} />
             </Col>
         );
     });
 
     return (
-        <Row className="manage-type-wrapper">
-            {manageTypeForm}
-            <Col xs={12} lg={2} md={3}>
-                <Button onClick={() => addCategoryForm()}>
-                    Add Type dropdown
-                </Button>
-            </Col>
-        </Row>
+        <Col lg={12} xs={12} md={12}>
+            <Row className="manage-type-wrapper">
+                {manageTypeForm}
+                <Col xs={12} lg={2} md={3}>
+                    <Button onClick={() => addCategoryForm()}>Add Type</Button>
+                </Col>
+            </Row>
+        </Col>
     );
 };
 
@@ -40,8 +40,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addCategoryForm: (category) => {
-            dispatch(addCategoryForm(category));
+        addCategoryForm: () => {
+            dispatch(addCategoryForm());
         },
     };
 };

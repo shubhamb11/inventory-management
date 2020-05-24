@@ -1,0 +1,31 @@
+.remove-dec {
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.w-100 {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.remove-btn {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #d6e2f6;
+    border: 0;
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0px 5px;
+    border-radius: 0;
+    text-transform: capitalize;
+    box-shadow: none;
+}

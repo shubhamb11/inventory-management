@@ -3,6 +3,7 @@ import "./App.scss";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import CustomNavbar from "./components/CustomNavbar";
+import ManageTypeView from "./components/ManageTypeView";
 
 class App extends React.Component {
     render() {
@@ -12,7 +13,7 @@ class App extends React.Component {
                     <CustomNavbar />
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        {/* <Route path="/cart" component={Cart} /> */}
+                        <Route path="/manage" component={ManageTypeView} />
                     </Switch>
                 </BrowserRouter>
             </React.Fragment>
