@@ -17,26 +17,26 @@ const initState = {
     manage_type: [
         {
             id: 0,
-            cat_type: "chainsaw",
-            title: "modal",
+            cat_type: "Demo Title",
+            title: "Demo Field 1",
             fields: [
                 {
-                    name: "111",
+                    name: "Demo Field 1",
                     type: "text",
                     value: "",
-                    id: "121",
+                    id: 1,
                 },
                 {
-                    name: "modal",
-                    type: "text",
-                    value: "",
-                    id: "124124",
+                    name: "Demo Field 2",
+                    type: "Number",
+                    value: 10,
+                    id: 2,
                 },
                 {
-                    name: "questiion",
+                    name: "Demo Field 3",
                     type: "text",
-                    value: "",
-                    id: "213214",
+                    value: "Demo Value",
+                    id: 3,
                 },
             ],
         },
